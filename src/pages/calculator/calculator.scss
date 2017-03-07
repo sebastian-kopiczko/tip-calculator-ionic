@@ -1,0 +1,96 @@
+page-calculator {
+
+  ion-header {
+    ion-title {
+      position: relative;
+      width: 100%;
+      text-align: right;
+
+      .span-wrap {
+        font-size: 2.7rem;
+      }
+    }
+
+  }
+  .full-app {
+    background-color: #363a45;
+  }
+
+  .border {
+    //box-shadow: 0px 5px 3px 0px rgba(222, 222, 222, 0.9);
+    border-radius: 5px;
+    padding: 1rem;
+    background: transparent;
+
+    .currency-select {
+      color: #f4cf02;
+    }
+
+    ion-item {
+      margin: 10px 0px;
+      background: transparent;
+
+      ion-input {
+        color: #fff;
+        //background-color: #585b6a;
+        border-radius: 2px;
+        padding: 0.7rem;
+        margin-left: -1.4rem;
+
+        .icon-inside {
+          position: absolute;
+          top: 20px;
+        }
+      }
+      ion-select {
+        color: #fff;
+        margin-left: -1.4rem;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .logo-margin {
+    margin-top: -4px;
+  }
+
+  .result {
+    min-width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+  }
+
+  .total-tip {
+    font-size: 3.5rem;
+  }
+
+  .bottom-border {
+    border-bottom-color: #ffd202;
+  }
+
+  .is-selected {
+    border-bottom-color: #32db64;
+    margin-top: 4.2rem !important;
+  }
+
+  .center-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  //.invalid {
+  //  border-bottom-color: #ea6153 !important;
+  //}
+  //
+  //.valid{
+  //  border-bottom-color: #32db64 !important;
+  //}
+}
+

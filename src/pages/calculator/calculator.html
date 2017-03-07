@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <div class="span-wrap">
+        <span class="text-white">Tip</span><span color="appYellow" class="text-yellow">Calc.</span>
+      </div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="full-app">
+  <ion-list class="border">
+
+    <ion-item>
+      <ion-label>{{textLang.currency}}</ion-label>
+      <ion-select class="currency-select" [(ngModel)]="currency">
+        <ion-option value="usd" selected="true">$</ion-option>
+        <ion-option value="euro">&euro;</ion-option>
+        <ion-option value="pln">PLN</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="invalid" floating>{{ textLang.bill }}</ion-label>
+      <ion-input id="input-bill" type="number" step="1" max="10000" [(ngModel)]="totalBill"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ textLang.people }}</ion-label>
+      <ion-input id="input-ppl" type="number" min="1" step="1" class="bottom-border" [(ngModel)]="people"
+                 ng-pattern="onlyNumbers"></ion-input>
+    </ion-item>
+
+    <ion-item class="margin-top">
+      <ion-label>{{textLang.service}}</ion-label>
+      <ion-select okText="OK" cancelText="{{textLang.cancel}}" class="is-selected" [(ngModel)]="serviceRate">
+        <ion-option value=0.2>{{ textLang.rates[0] }}</ion-option>
+        <ion-option value=0.15>{{ textLang.rates[1] }}</ion-option>
+        <ion-option value=0.1>{{ textLang.rates[2] }}</ion-option>
+        <ion-option value=0.05>{{ textLang.rates[3] }}</ion-option>
+        <ion-option value=0.01>{{ textLang.rates[4] }}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <!--hidden because of too long bottom border-->
+    <ion-item class="hidden"></ion-item>
+
+  </ion-list>
+  <div class="center-btn">
+    <button ion-button class="btn-effects" (click)="showTip()">
+      {{ textLang.btn }}
+    </button>
+  </div>
+  <div id="result" class="result hidden">
+    <h2>{{ textLang.finalMsg }}</h2>
+    <span class="total-tip">{{finalPrice}}</span>
+  </div>
+</ion-content>

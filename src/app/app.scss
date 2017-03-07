@@ -1,0 +1,144 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.toolbar-background {
+  background-color: #585b6a;
+}
+
+.list-md .item-block .item-inner {
+  border-bottom: 1px solid #f4cf02;
+}
+
+*::-webkit-input-placeholder, .select-md .select-placeholder {
+  color: #c1c4d7 !important;
+}
+
+*:-moz-placeholder, .select-md .select-placeholder {
+  color: #c1c4d7 !important;
+}
+
+*:-ms-input-placeholder, .select-md .select-placeholder { /* IE10+ */
+  color: #c1c4d7 !important;
+}
+
+ion-icon {
+  color: #f4cf02;
+  font-size: 3.2rem;
+}
+
+.alert-md {
+
+  .alert-head {
+    text-align: center;
+    padding: 8px;
+    color: #c8c8c8;
+    text-transform: uppercase;
+  }
+
+  .alert-title {
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+  }
+  .alert-wrapper {
+    background-color: #585b6a;
+  }
+
+  .alert-button {
+    padding: 8px;
+    color: #c8c8c8;
+  }
+  .alert-button:last-child {
+    color: #f4cf02;
+  }
+
+  .alert-radio-inner {
+    background-color: transparent;
+  }
+
+  .alert-radio-label {
+    color: #c8c8c8;
+    font-size: 1.7rem;
+  }
+}
+
+.alert-md [aria-checked=true] .alert-radio-label {
+  color: #f4cf02;
+}
+
+.alert-md [aria-checked=true] .alert-radio-icon {
+  border-color: #f4cf02;
+}
+
+.item-md.item-input.input-has-focus .item-inner {
+  border-bottom: 2px solid #f4cf02;
+  box-shadow: inset 0 0 0 0 #fff;
+}
+
+ion-header {
+  .text-white {
+    color: #fff;
+  }
+  .text-yellow {
+    color: #f4cf02;
+  }
+}
+
+.btn-effects {
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  letter-spacing: 0.1rem;
+  background-color: #ffd202;
+  color: #000;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bolder;
+  border-radius: 1rem;
+}
+
+.btn-effects:hover {
+  box-shadow: 0px 37px 20px -20px rgba(255, 210, 2, 1);
+  transform: translate(0px, -6px) scale(1.07);
+  background-color: #2d2d2d !important;
+  color: #ffd202;
+}
+
+.list-md .item-block .item-inner {
+  //border-bottom: none;
+}
+
+.action-sheet-container {
+  background-color: rgba(88, 91, 106, 0.65) !important;
+}
+
+.action-sheet-md {
+  .action-sheet-button {
+    color: #ffd202;
+  }
+
+  .action-sheet-title {
+    color: #fff;
+  }
+}
+
+.action-sheet-md .action-sheet-button.activated {
+  background-color: transparent;
+  color: #32db64;
+}
+
+.alert-message {
+  overflow: hidden;
+}
